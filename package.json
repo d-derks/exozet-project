@@ -1,0 +1,32 @@
+{
+  "name": "exozet-project",
+  "private": true,
+  "description": "Frontend challenge HTML5/CSS3",
+  "autor": "Debbie Derks",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "dependencies": {
+    "gatsby": "^2.0.76",
+    "gatsby-plugin-postcss": "^2.0.2",
+    "gatsby-plugin-sass": "^2.0.1",
+    "node-sass": "^4.9.0",
+    "normalize-scss": "^7.0.1",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "tachyons-sass": "^4.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
