@@ -1,0 +1,16 @@
+/* page *
+------------------------------ */
+
+@import '../assets/styles/settings/colors.scss';
+
+.l-page {
+    position: relative;
+    width: 100%;
+    background: $color-courageous;
+}
+
+.page-inner {
+    max-width: 1000px;
+    margin: auto;
+    background: #FFFFFF;
+}
