@@ -1,0 +1,30 @@
+@import '../../assets/styles/settings/utils.scss';
+
+/* pageheader *
+----------------------------------- */
+
+.b-pageheader {
+    width: 100%;
+}
+
+.pageheader-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 44px 10px 30px;
+    border-bottom: 1px solid $color-involved;
+
+    @media (max-width: 768px) {
+        padding: 22px 10px 15px;
+    }
+}
+
+.pageheader-nav {
+    margin-left: auto;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+

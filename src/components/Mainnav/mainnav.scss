@@ -1,0 +1,40 @@
+@import '../../assets/styles/settings/utils.scss';
+
+/* mainnav *
+----------------------------------- */
+
+.b-mainnav {
+    width: 100%;
+}
+
+.mainnav-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+    height: 100%;
+}
+
+.mainnav-item {
+    text-align: center;
+}
+
+.mainnav-item-link {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 350ms ease, border 350ms ease;
+
+    &:hover, &:focus {
+        border-radius: 5px;
+        box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1), inset -1px -1px 1px rgba(0,0,0,0.1);
+        background: $color-touched;
+    }
+}
+
+.mainnav-item-text {
+    text-transform: uppercase;
+    font: 400 18px/1.3 'Titillium Web', 'Helvetica Neue', 'sans-serif';
+    color: $color-astonished;
+}
