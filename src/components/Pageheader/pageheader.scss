@@ -1,10 +1,12 @@
-@import '../../assets/styles/settings/utils.scss';
+@import "../../assets/styles/settings/utils.scss";
 
 /* pageheader *
 ----------------------------------- */
 
 .b-pageheader {
+    max-width: 1000px;
     width: 100%;
+    background: #FFFFFF;
 }
 
 .pageheader-inner {
