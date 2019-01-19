@@ -11,27 +11,31 @@
 }
 
 .page-wrapper {
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
-    background: #FFFFFF;
+    height: 100%;
+
+    & > div {
+        display: flex; // sticky footer
+        flex-direction: column; // sticky footer
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 20px;
+        height: 100%;
+        background: #FFFFFF;
+        box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2), -1px 0 5px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .page-inner {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-
-    @media (max-width: 768px) {
-        display: inherit;
-        padding-top: 64px;
-    }
+    flex: 1 0 auto; // sticky footer
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .page-main {
     flex: 3;
     padding: 30px 70px 10px 0;
-    background: palevioletred;
 
     @media (max-width: 768px) {
         padding: 20px 0 10px;
@@ -41,7 +45,6 @@
 .page-sideinfo {
     flex: 1;
     padding: 30px 10px 10px;
-    background: cadetblue;
 
     @media (max-width: 768px) {
         padding: 20px 0 10px;
@@ -49,7 +52,14 @@
 }
 
 .page-footer {
-    padding: 15px 0 40px;
+    flex-shrink: 0; // sticky footer
     width: 100%;
-    background: palegoldenrod;
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px 0 40px;
+    border-top: 1px solid $color-involved;
+}
+
+.page-footer-inner {
+    padding: 44px 10px 30px;
 }
