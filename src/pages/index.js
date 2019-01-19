@@ -4,23 +4,20 @@ import './page.scss';
 import Togglebtn from '../components/Togglebtn';
 
 export default () => (
-    <React.Fragment>
-        <div className='l-page'>
-        <div className="page-wrapper">
+    <>
+        <div className="page-inner">
             <Pageheader/>
             <Togglebtn/>
-            <div className="page-inner">
-                <main className="page-main">
-                    <div className="page-main-inner">
-                    </div>
-                </main>
-                <aside className="page-sideinfo">
-                </aside>
-            </div>
+            <main className="page-main">
+                <div className="page-main-inner">
+                </div>
+            </main>
+            <aside className="page-sideinfo">
+            </aside>
         </div>
         <footer className="page-footer">
+            <div className="page-footer-inner">
+            </div>
         </footer>
-        </div>
-    </React.Fragment>
-)
-//
+    </>
+);
