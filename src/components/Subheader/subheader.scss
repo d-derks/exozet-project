@@ -9,6 +9,8 @@
 }
 
 .subheader-title {
+    position: relative;
+    text-transform: uppercase;
     font: 700 32px/1.3 "Titillium Web", "Helvetica Neue", "sans-serif";
     color: $color-astonished;
 
@@ -18,6 +20,19 @@
         top: 4px;
         margin-left: 5px;
     }
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        background: $color-compassion;
+    }
+
 }
 
 

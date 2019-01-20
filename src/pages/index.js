@@ -3,6 +3,8 @@ import Pageheader from '../components/Pageheader';
 import './page.scss';
 import Togglebtn from '../components/Togglebtn';
 import Item from '../components/Item';
+import Subheader from "../components/Subheader";
+import Form from "../components/Form";
 
 export default () => (
     <>
@@ -12,6 +14,12 @@ export default () => (
             <div className="page-wrapper is-special">
                 <main className="page-main">
                     <Item />
+                    <section className="page-section">
+                        <Subheader
+                            title="Formular"
+                        />
+                        <Form />
+                    </section>
                 </main>
                 <aside className="page-sideinfo">
             </aside>
