@@ -1,0 +1,40 @@
+@import "../../assets/styles/settings/utils.scss";
+
+/* Media *
+------------------------------ */
+
+.b-media {
+    position: relative;
+    width: 100%;
+
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 60%;
+    }
+}
+
+.media-img {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+
+    &.is-framed {
+        border: solid white 3px;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+}
+
+.media-origin {
+    padding: 15px 0 5px;
+    font: 400 14px/1.3 "Titillium Web", "Helvetica Neue", "sans-serif";
+    color: $color-involved;
+
+    @media (max-width: 400px) {
+        padding-bottom: 15px;
+    }
+}

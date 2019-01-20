@@ -1,7 +1,9 @@
-@import '../assets/styles/settings/colors.scss';
+@import "../assets/styles/settings/colors.scss";
 
 /* page *
 ------------------------------ */
+
+// [1] Necessary for creating sticky footer
 
 .l-page {
     position: relative;
@@ -11,22 +13,30 @@
 }
 
 .page-wrapper {
-    height: 100%;
 
     & > div {
-        display: flex; // sticky footer
-        flex-direction: column; // sticky footer
+        display: flex; // [1]
+        flex-direction: column; // [1]
         max-width: 1000px;
         margin: auto;
         padding: 0 20px;
         height: 100%;
-        background: #FFFFFF;
+        background: #fff;
         box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2), -1px 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    &.is-special {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
 }
 
 .page-inner {
-    flex: 1 0 auto; // sticky footer
+    flex: 1 0 auto; // [1]
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -35,7 +45,7 @@
 
 .page-main {
     flex: 3;
-    padding: 30px 70px 10px 0;
+    padding: 40px 70px 10px 0;
 
     @media (max-width: 768px) {
         padding: 20px 0 10px;
@@ -44,7 +54,7 @@
 
 .page-sideinfo {
     flex: 1;
-    padding: 30px 10px 10px;
+    padding: 40px 10px 10px;
 
     @media (max-width: 768px) {
         padding: 20px 0 10px;
@@ -52,7 +62,7 @@
 }
 
 .page-footer {
-    flex-shrink: 0; // sticky footer
+    flex-shrink: 0; // [1]
     width: 100%;
     max-width: 1000px;
     margin: auto;
