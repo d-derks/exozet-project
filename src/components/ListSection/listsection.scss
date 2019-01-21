@@ -21,7 +21,7 @@
     margin-bottom: 5px;
     font: 400 14px/1.3 "Titillium Web", "Helvetica Neue", "sans-serif";
 
-    &.is-no-marker {
-        list-style-type: none;
+    &.is-marker {
+        list-style-type: inherit;
     }
 }

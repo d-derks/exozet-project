@@ -1,8 +1,6 @@
 import React from 'react';
 import Pageheader from '../components/Pageheader';
-import './page.scss';
-import Togglebtn from '../components/Togglebtn';
-import Item from '../components/Item';
+import Item from '../components/Article';
 import Subheader from "../components/Subheader";
 import Form from '../components/Form';
 import List from '../components/ListSection';
@@ -12,7 +10,6 @@ export default () => (
     <>
         <div className="page-inner">
             <Pageheader/>
-            <Togglebtn/>
             <div className="page-wrapper is-special">
                 <main className="page-main">
                     <Item />
@@ -21,6 +18,12 @@ export default () => (
                             title="Formular"
                         />
                         <Form />
+                    </section>
+                    <section className="page-section">
+                        <Subheader
+                            title="Leistungsumfang"
+                        />
+                        <List />
                     </section>
                 </main>
                 <aside className="page-sideinfo">
