@@ -4,7 +4,9 @@ import './page.scss';
 import Togglebtn from '../components/Togglebtn';
 import Item from '../components/Item';
 import Subheader from "../components/Subheader";
-import Form from "../components/Form";
+import Form from '../components/Form';
+import List from '../components/ListSection';
+import './page.scss';
 
 export default () => (
     <>
