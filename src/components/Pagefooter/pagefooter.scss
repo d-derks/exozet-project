@@ -1,0 +1,14 @@
+@import "../../assets/styles/settings/utils.scss";
+
+/* pagefooter *
+----------------------------------- */
+
+.b-Pagefooter {
+    flex-shrink: 0; // [1]
+    width: 100%;
+    border-top: 1px solid $color-compassion;
+}
+
+.pagefooter-inner {
+    padding: 15px 0 40px;
+}
