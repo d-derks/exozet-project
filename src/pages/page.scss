@@ -53,11 +53,16 @@
 
 .page-main {
     flex: 3;
-    padding: 40px 70px 25px 0;
+    padding: 40px 70px 0 0;
 
     @media (max-width: 768px) {
-        padding: 20px 0 5px;
+        padding: 20px 0 0;
     }
+}
+
+.page-section {
+    width: 100%;
+    padding: 0 0 35px;
 }
 
 .page-sideinfo {
