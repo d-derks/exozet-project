@@ -19,10 +19,18 @@
         flex-direction: column; // [1]
         max-width: 1000px;
         margin: auto;
-        padding: 0 20px;
+        padding: 0 30px;
         height: 100%;
         background: #fff;
         box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2), -1px 0 5px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 768px) {
+            padding: 0 20px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 10px;
+        }
     }
 
     &.is-special {
@@ -45,10 +53,10 @@
 
 .page-main {
     flex: 3;
-    padding: 40px 70px 10px 0;
+    padding: 40px 70px 25px 0;
 
     @media (max-width: 768px) {
-        padding: 20px 0 10px;
+        padding: 20px 0 5px;
     }
 }
 
@@ -67,7 +75,7 @@
     max-width: 1000px;
     margin: auto;
     padding: 15px 0 40px;
-    border-top: 1px solid $color-involved;
+    border-top: 1px solid $color-compassion;
 }
 
 .page-footer-inner {
