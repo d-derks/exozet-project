@@ -18,15 +18,91 @@ body > div > div {
     height: 100%; // sticky footer
 }
 
-figure {
+p, figure {
     margin: 0;
 }
 
-/* utility classes *
------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
-.u-fullheight {
-    height: 100%;
+*:focus {
+    outline: none;
+}
+
+//	Text-Selection
+// ---------------------
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #19469d;
+}
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #19469d;
+}
+
+a {
+    color: #739024;
+    text-decoration: none;
+}
+
+:active {
+    text-shadow: none;
+}
+
+a:focus {
+    outline: 1px dotted #19469d;
+    outline-offset: 5px;
+}
+
+a:link,
+button,
+input[type="submit"] {
+    touch-action: manipulation;
+}
+
+//	Typo
+// ---------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+//	List
+// ---------------------
+ol,
+ul,
+dl,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+//	Form
+// ---------------------
+
+fieldset {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: none;
 }
 
 
