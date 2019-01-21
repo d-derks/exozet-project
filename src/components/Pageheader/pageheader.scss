@@ -13,20 +13,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 44px 10px 30px;
-    border-bottom: 1px solid $color-involved;
+    padding: 44px 0 30px;
+    border-bottom: 1px solid $color-compassion;
 
     @media (max-width: 768px) {
-        padding: 22px 10px 15px;
+        padding: 22px 0 15px;
     }
 }
 
 .pageheader-nav {
     margin-left: auto;
 
-    @media (max-width: 768px) {
-        display: none;
-    }
 }
 
 
