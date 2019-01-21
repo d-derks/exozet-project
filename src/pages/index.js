@@ -4,6 +4,7 @@ import Item from '../components/Article';
 import Subheader from "../components/Subheader";
 import Form from '../components/Form';
 import List from '../components/ListSection';
+import Pagefooter from '../components/Pagefooter';
 import './page.scss';
 
 export default () => (
@@ -30,9 +31,6 @@ export default () => (
             </aside>
             </div>
         </div>
-        <footer className="page-footer">
-            <div className="page-footer-inner">
-            </div>
-        </footer>
+        <Pagefooter />
     </>
 );
