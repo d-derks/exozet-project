@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-.form-field {
+.form-inner {
     padding-left: 0;
     max-width: 500px;
     border: none;
@@ -47,17 +47,21 @@
     color: $color-jolly;
 }
 
-.form-required-symbol {
+.form-notion {
     color: #739024;
 }
 
 .form-row {
+    width: 100%;
+}
+
+.b-formfield {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
 
-.form-label {
+.formfield-label {
     flex: 1;
     margin: 0 20px 5px 0;
     width: 100%;
@@ -71,12 +75,17 @@
     }
 }
 
-.form-row-field {
+.formfield-box {
     flex: 2;
     width: 100%;
 
     @media (max-width: 768px) {
         flex: none;
+    }
+
+    &.is-error {
+        border: 1px solid $color-jolly;
+        border-radius: 4px;
     }
 }
 
@@ -85,7 +94,7 @@
     box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2);
     border-radius: 4px;
     border: solid 1px $color-compassion;
-    padding: 5px;
+    padding: 7px 10px;
 }
 
 .form-textarea {
