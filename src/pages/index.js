@@ -7,6 +7,7 @@ import List from '../components/ListSection';
 import Pagefooter from '../components/Pagefooter';
 import CompanyInfo from '../components/CompanyInfo';
 import './page.scss';
+import '../styles/settings/font.scss';
 
 export default () => (
     <>
