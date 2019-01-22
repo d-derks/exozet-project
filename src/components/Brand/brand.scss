@@ -20,10 +20,24 @@
     width: 1px;
 }
 
-.brand-logo {
+.brand-img {
     width: 100%;
 
     @media (max-width: 768px) {
         max-width: 100px;
+    }
+
+    @media (max-width: 450px) {
+        display: none;
+    }
+}
+
+.brand-svg {
+    display: none;
+    width: 25px;
+    height: 25px;
+
+    @media (max-width: 450px) {
+        display: initial;
     }
 }
