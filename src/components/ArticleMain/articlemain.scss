@@ -1,0 +1,106 @@
+@import "../../assets/styles/settings/utils.scss";
+
+/* articlemain *
+------------------------------ */
+
+.b-articlemain {
+    padding: 0 0 20px;
+    width: 100%;
+}
+
+.articlemain-header-time {
+    font: 400 14px/1.3 "Titillium Web", "Helvetica Neue", "sans-serif";
+    color: $color-involved;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.articlemain-header-title {
+    position: relative;
+    margin: 0 0 20px;
+    font: 700 32px/1.3 "Titillium Web", "Helvetica Neue", "sans-serif";
+    text-transform: uppercase;
+    color: $color-astonished;
+
+    &::after {
+        content: "/";
+        position: relative;
+        top: 1px;
+        margin-left: 5px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+.articlemain-media {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 35%;
+
+    @media (max-width: 768px) {
+        width: 40%;
+    }
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+}
+
+.b-richtext {
+
+    p {
+        position: relative;
+        margin: 0 0 25px;
+        font: 400 14px/1.5 "Titillium Web", "Helvetica Neue", "sans-serif";
+        color: $color-astonished;
+    }
+
+    a {
+        display: inline-block;
+        cursor: pointer;
+        transition: color 300ms ease;
+
+        &:hover,
+        &:focus {
+            color: $color-jolly;
+        }
+    }
+
+    blockquote {
+        position: relative;
+        text-align: center;
+        max-width: 430px;
+        margin: auto;
+        margin-bottom: 25px;
+        padding: 15px 0;
+
+        p {
+            position: relative;
+            margin: 0;
+            font: 400 italic 18px/1.3 Georgia, serif;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 300px;
+            height: 1px;
+            background: $color-compassion;
+        }
+
+        &::after {
+            top: auto;
+            bottom: 0;
+        }
+    }
+}
+
