@@ -7,15 +7,28 @@ export default function PageInfo() {
             <small className="pageinfo-copywright">© Exozet 2014</small>
             <ul className="pageinfo-list">
                 <li className="pageinfo-list-item">
-                    <a href="#" className="paginfo-list-item-inner">News</a>
+                    <a
+                        className="paginfo-list-item-inner"
+                        href="#"
+                    >
+                        News
+                    </a>
                 </li>
                 <li className="pageinfo-list-item">
-                    <a href="#" className="paginfo-list-item-inner">Kontakt</a>
+                    <a className="paginfo-list-item-inner"
+                       href="#"
+                    >
+                        Kontakt
+                    </a>
                 </li>
                 <li className="pageinfo-list-item">
-                    <a href="#" className="paginfo-list-item-inner">Impressum</a>
+                    <a
+                        className="paginfo-list-item-inner"
+                        href="#"
+                    >
+                        Impressum
+                    </a>
                 </li>
-
             </ul>
         </div>
     )

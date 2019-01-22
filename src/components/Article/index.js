@@ -16,12 +16,19 @@ export default function Article() {
                     <div className="b-media">
                         <img
                             src={articleImg}
-                            alt="placeholder" className="media-img"/>
+                            alt="placeholder"
+                            className="media-img"
+                        />
                     </div>
                 </div>
                 <div className="article-textbox">
                     <p className="article-textbox-text">Es gibt im Moment in diese Manschaft , oh einige Spieler</p>
-                    <a className="article-textbox-link" href="#">Mehr lesen</a>
+                    <a
+                        className="article-textbox-link"
+                        href="#"
+                    >
+                        Mehr lesen
+                    </a>
                 </div>
             </div>
         </article>

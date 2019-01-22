@@ -3,7 +3,10 @@ import './buttons.scss';
 
 export default function BtnDefault() {
     return(
-        <button className="b-btndefault" type="submit">
+        <button
+            className="b-btndefault"
+            type="submit"
+        >
             Abschicken
         </button>
     )

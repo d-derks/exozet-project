@@ -7,7 +7,10 @@ export default function ArticleMain() {
     return(
         <article className="b-articlemain">
             <header className="articlemain-header">
-                <time className="articlemain-header-time" dateTime="2012-12-02 19:02">20.02.2012 | 19:02 Uhr</time>
+                <time
+                    className="articlemain-header-time"
+                    dateTime="2012-12-02 19:02">20.02.2012 | 19:02 Uhr
+                </time>
                 <h1 className="articlemain-header-title">Long headlinetext</h1>
             </header>
             <div className="b-richtext">
@@ -28,7 +31,10 @@ export default function ArticleMain() {
                 </p>
                 <div className="articlemain-media">
                     <figure className="b-media">
-                        <img className="media-img is-framed" src={articleMainImg} alt="placeholder"/>
+                        <img
+                            className="media-img is-framed"
+                            src={articleMainImg} alt="placeholder"
+                        />
                         <figcaption className="media-origin">© Lorempixel.com</figcaption>
                     </figure>
                 </div>
