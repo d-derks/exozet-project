@@ -1,19 +1,20 @@
 import React from 'react';
 import Pageheader from '../components/Pageheader';
-import Item from '../components/Article';
+import ArticleMain from '../components/ArticleMain';
 import Subheader from "../components/Subheader";
 import Form from '../components/Form';
 import List from '../components/ListSection';
 import Pagefooter from '../components/Pagefooter';
+import CompanyInfo from '../components/CompanyInfo';
 import './page.scss';
 
 export default () => (
     <>
         <div className="page-inner">
             <Pageheader/>
-            <div className="page-wrapper is-special">
+            <div className="page-wrapper is-flexible">
                 <main className="page-main">
-                    <Item />
+                    <ArticleMain />
                     <section className="page-section">
                         <Subheader
                             title="Formular"
@@ -28,7 +29,8 @@ export default () => (
                     </section>
                 </main>
                 <aside className="page-sideinfo">
-            </aside>
+                    <CompanyInfo />
+                </aside>
             </div>
         </div>
         <Pagefooter />
