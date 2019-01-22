@@ -3,4 +3,5 @@ module.exports = {
         `gatsby-plugin-sass`,
         `gatsby-plugin-postcss`,
     ],
+    pathPrefix: '/project-exozet',
 }
