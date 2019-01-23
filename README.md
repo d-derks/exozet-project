@@ -14,5 +14,5 @@ Every block component starts with b-component. When you go deeper into the compo
 - Cross-browser development
 - Responsive for all devices
 - Sticky footer
-- Favicon
+
 

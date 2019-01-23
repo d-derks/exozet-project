@@ -1,6 +1,5 @@
 import React from 'react';
 import Subheader from '../Subheader';
-import articleImg from '../../assets/media/img-2.jpg';
 import './article.scss';
 
 
@@ -15,7 +14,7 @@ export default function Article() {
                 <div className="article-media">
                     <div className="b-media">
                         <img
-                            src={articleImg}
+                            src="https://www.exozet.com/wp-content/uploads/2018/09/Exozet_concertVR_01.jpg"
                             alt="placeholder"
                             className="media-img"
                         />
